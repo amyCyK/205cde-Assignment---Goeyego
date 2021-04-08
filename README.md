@@ -1,6 +1,6 @@
 # 205CDE-Assignment---Goeyego
-# Student Name: Chan Yik Kit
-# Student ID: 56237852
+Student Name: Chan Yik Kit
+Student ID: 56237852
 
 One-stop travel information website
 
