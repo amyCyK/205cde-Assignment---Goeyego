@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>GoEyeGo</title>
+
+	<link href="{{url_for('static', filename='favicon.jpg')}}" rel="shortcut icon" type="image/jpg" sizes="720x720">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style2.css')}}">
+	<!--jquery-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!--description of this website-->
+	<meta charset="utf-8">
+	<meta name="description" content="Free one-stop travel information website">
+	<meta name="keywords" content="News related to travelling, Currency and Caculation tool, Hotel information, Flight information, Discount, blog for sharing and dicussing, contact Us">
+	<meta name="author" content="GoEyeGo">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="refresh" content="60">
+</head>
+<body>
+	<div class="welcome">
+		<marquee direction=right><h3> Notice <img src="{{url_for('static', filename='Notice.png')}}" alt="Notice logo" width="20px" height="20px"><i> Welcome to One-Stop Travel Information Site</i><STRONG><a href="index.html"> GoEyeGo </a></STRONG><b><em>Hope you enjoy yourself!</em></b></h3></marquee>
+	</div>	
+	<nav>
+		<br>
+		<label class="logo"><a href="index.html"><img src="{{url_for('static', filename='favicon.jpg')}}" alt="GoEyeGo image" width="160px" height="160px"></a></label>
+		<!--Go to Home Page-->
+		<ul>
+			<!--Go to Home Page-->
+			<li><a class="active" href="index.html">Home</a></li>				
+			<!--Currrent news realted travel such as, COVID-19-->
+			<li><a href="news.html">News</a></li>
+			<!--Dropdown list for food, shopping, famous travelspot, etc-->		
+			<!--blockquote>Information</blockquote-->
+			<!--Currency Tool-->
+			<li><a href="currency.html">Currency</a></li>
+			<!--Information Dropdown List: Hotel and Flight-->
+			<li>
+				<div class="dropdown">
+  					<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				Information
+  					</button>
+  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    					<a class="dropdown-item" href="hotel.html">Hotel</a>
+    					<a class="dropdown-item" href="filght.html">Flight</a>
+    					<a class="dropdown-item" href="#">Books</a>
+  					</div>
+				</div>		
+			</li>	
+			<!--Log-in to share your travel-->		
+			<li><a href="#">Blog</a></li>
+			<!--Hotel Links-->
+			<li><a href="contactus.html">Contact Us</a></li>
+			<br>
+			<h3 align="right"><blockquote><a href="login.html">Log In</a></blockquote></h3>
+		</ul>
+	</nav>
+	</div>
+	<div class="body">
+		<br>
+		<h1><font color="#7F3B00"><i>GOEYEGO</i></font></h1>
+		<h2 id="introduction"><u>Our Story</u><br>Regular update and aims to provide you the latest news and information related to travelling. We also provide a platform for blogging and recording your trips. We were conceived as a better, smarter alternative to informative travel sites. We feature professional hotel, restaurant and attraction reviews from trusted sources — succinct information that helps you make decisions on where to stay, dine and go with confidence.<br>Let's travel and enjoy!</h2>
+		<p><pre>
+			<blockquote><u><mark>UPDATES</mark></u></blockquote><br>Here is the updates today, have a look of these!</p><p>1. New location information update: Hong Kong<br>Home to more than 7 million people, 260 islands and more skyscrapers than any other city on the planet, Hong Kong is an immense destination in every sense of the word. But don’t be overwhelmed, as it’s also an incredibly easy city to navigate. Meander your way between river cruises, ancient monasteries, quiet fishing villages and futuristic light shows, and end a day of exploring with a cocktail and a bird’s-eye view.<br>2. More linked website for your hotel, filght choice!</p>
+			<h3><a href="news.html">Health Notice - Coronavirus Disease 2019 (COVID-19)</a></h3>
+			<p>Members of the public are strongly urged to avoid non-essential travel outside Hong Kong.<br>For information about countries/areas with reported cases of COVID-19, please <a href="https://www.chp.gov.hk/files/pdf/statistics_of_the_cases_novel_coronavirus_infection_en.pdf">click here</a>.<br>Public urged to stay alert to emails purported to be issued by CHP. For details, please <a href="https://www.info.gov.hk/gia/general/202103/03/P2021030300733.htm">click here</a>.<br>Many countries are experiencing a resurgence of measles with outbreaks reported. Outbreak news of the affected areas is available from the website of the Department of Health's Travel Health Service. Pregnant women and women preparing for pregnancy who are not immune to measles as well as children aged under 1 year are advised not to travel to places with outbreaks of measles. If in doubt, consult your doctors at least two weeks before departure. Members of the public should always maintain personal hygiene; keep hands clean; avoid going to crowded or poorly ventilated places. If symptoms occur, wear a mask and inform doctors of travel history.</p>
+		</pre></p>
+		<br>
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  			<ol class="carousel-indicators">
+    			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  			</ol>
+  			<div class="carousel-inner">
+    			<div class="carousel-item active">
+      				<img class="d-block w-100" src="{{url_for('static', filename='hk1.jpg')}}" alt="The Peak">
+    			</div>
+    			<div class="carousel-item">
+      				<img class="d-block w-100" src="{{url_for('static', filename='hk2.jpg')}}" alt="Big Budder">
+    			</div>
+    			<div class="carousel-item">
+     				<img class="d-block w-100" src="{{url_for('static', filename='hk3.jpg')}}" alt="Shek O">
+    			</div>
+  			</div>
+  			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Previous</span>
+  			</a>
+  			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Next</span>
+  			</a>
+		</div>
+		<div class="row">
+			<div class="card col-md-4 col-sm-12 col-xm-12" style="width: 18rem; margin: 20px 0 24px 0">
+				<img src="{{url_for('static', filename='hotel.png')}}" alt="image" class="card-img-top zoom">
+				<div class="card-body">
+					<h4 class="card-title">Hotels</h4>
+					<p class="card-text">Book a Room during Daytime. No Card required. Free Cancellation. Up to 75% Off! A hotel room during the day. Up to 75% off the overnight stay price. Book now! Daytime hotel rooms</p>
+					<a href="hotel.html" class="btn btn-primary">Hotel Information</a>
+				</div>				
+			</div>
+			<div class="card col-md-4 col-sm-12 col-xm-12" style="width: 18rem; margin: 20px 0 24px 0">
+				<img src="{{url_for('static', filename='airportA.png')}}" alt="image" class="card-img-top zoom">
+				<div class="card-body">
+					<h4 class="card-title">Flight</h4>
+					<p class="card-text">Departures. Table to select between passenger and cargo departure flights. Last updated on: PassengerCargo. Enter keyword to filter flight number, origin or ...</p>
+					<a href="flight.html" class="btn btn-primary">Flight Information</a>
+				</div>				
+			</div>
+			<div class="card col-md-4 col-sm-12 col-xm-12" style="width: 18rem; margin: 20px 0 24px 0">
+				<img src="{{url_for('static', filename='bookicon.png')}}" alt="image" class="card-img-top zoom">
+				<div class="card-body">
+					<h4 class="card-title">A Modern History of Hong Kong: 1841-1997 by Steve Tsang (2003)</h4>
+					<p class="card-text">Genre: History<br>There’s no better source than a history book to learn about a city’s birth and growth. Tsang’s comprehensive book starts from the very beginning: from Hong Kong’s occupation by the British in 1841 to the handover in 1997...</p>
+					<a href="#" class="btn btn-primary">Read Book Now</a>
+				</div>				
+			</div>		
+		</div>
+	</div>
+
+	<!--footer-->
+	<footer class="page-footer font-small blue pt-4">
+
+		<!--Footer Links-->
+		<div class="container-fluid text-center text-md-left">
+			<!--Grid row-->
+			<div class="row">
+				<!-- Grid column-->
+				<div class="col-md-6 mt-md-0 mt-3" >
+					<!--content-->
+					<h5 class="text-uppercase">More</h5>
+					<p>Here you can use fast links to read more, enjoy!</p>			
+				</div>
+				<!--Grid Column-->
+				<hr class="clearfix w-100d-md-none pb-3">
+
+				<!--Grid Column-->
+				<div class="col-md-3 mb-md-0 mb-3">
+
+					<!--Links-->
+					<h5 class="text-uppercase">Recommed Countries</h5>
+
+					<ul class="list-unstyled">
+						<li><a href="https://www.discoverhongkong.com/us/index.html">Hong Kong</a></li>
+						<li><a href="https://www.japan.travel/en/">Japan</a></li>
+						<li><a href="https://www.hawaiitourismauthority.org/">Hawaii</a></li>
+						<li><a href="https://english.visitkorea.or.kr/enu/index.kto">Korea</a></li>					
+					</ul>				
+				</div>
+				<!--Grid Column-->
+				<div class="col-md-3 mb-md-0 mb-3">
+
+					<!--Links-->
+					<h5 class="text-uppercase">Useful links</h5>
+
+					<ul class="list-unstyled">
+						<li><a href="https://www.who.int/home">World Health Organization</a></li>
+						<li><a href="https://www.un.org/en">United Nations</a></li>
+						<li><a href="https://www.scmp.com/topics/travel-news-and-advice">South China Morning Post - Travel news</a></li>
+						<li><a href="https://www.wtravelmagazine.com/">World Travel</a></li>					
+					</ul>				
+				</div>
+				<!--end Grid Column-->
+			</div>
+			<!--End Grid row-->
+		</div>
+	</footer>
+	<!--End Footer Links-->
+	<!--Copyright-->
+	<div class="footer-copyright text-center py-3">@ 2021 Copyright: Chan Yik Kit <a href="#"><b>GoEyeGo</a>.com</b></div>	
+</body>
+</html>

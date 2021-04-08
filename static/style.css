@@ -1,0 +1,77 @@
+#introduction{color: Black;}
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+.welcome{
+	color: black;
+	text-align: left;
+	background-color: #21F4BC;
+	height: 30px;
+}
+nav{
+	background-color: #FD8B4A;
+	width: 100%;
+	height: 100px;
+}
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0px 50px 100px 50px;
+}
+nav ul{
+	float: right;
+	margin-right: 15px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0px 0px 0px 50px;
+}
+nav ul li a{
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+a.active, a:hover{
+	background:#FD8B4A;
+	transition: .5s;
+}
+.body{
+	font-family: montserrat;
+	color: white;
+	text-align: left;
+	background-color: #FD8B4A;
+	float: top;
+	width: 100%;
+	background-image: url("travelplan.jpg");
+	background-size: auto;
+  	background-width: 3431px;
+  	background-repeat: no-repeat;
+  	height: 100%;
+	color: black;
+	text-align: left;
+	padding: 100px 80px 80px 100px;
+}
+dt,dd{
+	text-align: center;
+	color: brown;
+	font-size: 30px;
+}
+#text{
+	text-align: center;
+	color: black;
+	font-size: 30px;
+}
+.footer{
+	padding: 100px 80px 80px 100px;
+	float: bottom;
+	color: white;
+  	width: auto;
+  	height: 150px;
+}

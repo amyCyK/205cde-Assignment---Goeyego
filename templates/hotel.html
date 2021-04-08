@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>GoEyeGo</title>
+
+	<link href="{{url_for('static', filename='favicon.jpg')}}" rel="shortcut icon" type="image/jpg" sizes="720x720">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style2.css')}}">
+	<!--jquery-->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="welcome">
+		<marquee direction=right><h3> Notice <img src="{{url_for('static', filename='Notice.png')}}" alt="Notice logo" width="20px" height="20px"><i> Welcome to One-Stop Travel Information Site</i><STRONG><a href="index.html"> GoEyeGo </a></STRONG><b><em>Hope you enjoy yourself!</em></b></h3></marquee>
+	</div>	
+	<nav>
+		<br>
+		<label class="logo"><a href="index.html"><img src="{{url_for('static', filename='favicon.jpg')}}" alt="GoEyeGo image" width="160px" height="160px"></a></label>
+		<!--Go to Home Page-->
+		<ul>
+			<!--Go to Home Page-->
+			<li><a class="active" href="index.html">Home</a></li>				
+			<!--Currrent news realted travel such as, COVID-19-->
+			<li><a href="news.html">News</a></li>
+			<!--Dropdown list for food, shopping, famous travelspot, etc-->		
+			<!--blockquote>Information</blockquote-->
+			<!--Currency Tool-->
+			<li><a href="currency.html">Currency</a></li>
+			<!--Information Dropdown List: Hotel and Flight-->
+			<li>
+				<div class="dropdown">
+  					<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				Information
+  					</button>
+  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    					<a class="dropdown-item" href="hotel.html">Hotel</a>
+    					<a class="dropdown-item" href="flight.html">Flight</a>
+    					<a class="dropdown-item" href="#">Books</a>
+  					</div>
+				</div>		
+			</li>	
+			<!--Log-in to share your travel-->		
+			<li><a href="#">Blog</a></li>
+			<!--Hotel Links-->
+			<li><a href="contactus.html">Contact Us</a></li>
+			<br>
+			<h3 align="right"><blockquote><a href="login.html">Log In</a></blockquote></h3>
+		</ul>
+	</nav>
+	</div>
+	<div class="body">
+		<br>
+		<h1><font color="#7F3B00"><i>Find your favourite hotel here!</i></font></h1>
+		<h2 id="introduction"><u>Plan Now! Travel Later</u><br><br>Find the perfect holiday to look forward to and know with free cancellation options you can make changes if you need to.<br><br>Let's travel and enjoy!</h2>
+		<br>
+		<div class="row">
+			<div class="card col-md-4 col-sm-12 col-xm-12" style="width: 18rem; margin: 20px 0 24px 0">
+				<img src="{{url_for('static', filename='hotelA.png')}}" alt="image" class="card-img-top zoom">
+				<div class="card-body">
+					<h4 class="card-title">Hotel B</h4>
+					<p class="card-text">Enjoy a 3-night hotel stay for just $199. Plus, get 20,000 points or a $100 Mastercard® Rewards Card. Call 1234-5678 to purchase your vacation package now—then, you’ll have a full year to complete your stay!</p>
+					<a href="booking.html" class="btn btn-primary">Book Now</a>
+				</div>				
+			</div>
+			<div class="card col-md-4 col-sm-12 col-xm-12" style="width: 18rem; margin: 20px 0 24px 0">
+				<img src="{{url_for('static', filename='hotelB.png')}}" alt="image" class="card-img-top zoom">
+				<div class="card-body">
+					<h4 class="card-title">Hotel C</h4>
+					<p class="card-text">Book by 5/25 and stay by 12/22/21 to save on luxury resort stays with unlimited dining and spirits, entertainment and more. Plus, book on goeyego.com to earn enough points for a week of free nights at select more locations!</p>
+					<a href="booking.html" class="btn btn-primary">Book Now</a>
+				</div>				
+			</div>	
+			<div class="card col-md-4 col-sm-12 col-xm-12" style="width: 18rem; margin: 20px 0 24px 0">
+				<img src="{{url_for('static', filename='hotel.png')}}" alt="image" class="card-img-top zoom">
+				<div class="card-body">
+					<h4 class="card-title">Hotel A</h4>
+					<p class="card-text">Book a Room during Daytime. No Card required. Free Cancellation. Up to 75% Off! A hotel room during the day. Up to 75% off the overnight stay price. Book now! Daytime hotel rooms</p>
+					<a href="booking.html" class="btn btn-primary">Book Now</a>
+				</div>				
+			</div>			
+		</div>
+		<div class="row">
+			<div class="card col-md-4 col-sm-12 col-xm-12" style="width: 18rem; margin: 20px 0 24px 0">
+				<img src="{{url_for('static', filename='hotel.png')}}" alt="image" class="card-img-top zoom">
+				<div class="card-body">
+					<h4 class="card-title">Hotel A</h4>
+					<p class="card-text">Book a Room during Daytime. No Card required. Free Cancellation. Up to 75% Off! A hotel room during the day. Up to 75% off the overnight stay price. Book now! Daytime hotel rooms</p>
+					<a href="booking.html" class="btn btn-primary">Book Now</a>
+				</div>				
+			</div>
+			<div class="card col-md-4 col-sm-12 col-xm-12" style="width: 18rem; margin: 20px 0 24px 0">
+				<img src="{{url_for('static', filename='hotelA.png')}}" alt="image" class="card-img-top zoom">
+				<div class="card-body">
+					<h4 class="card-title">Hotel B</h4>
+					<p class="card-text">Enjoy a 3-night hotel stay for just $199. Plus, get 20,000 points or a $100 Mastercard® Rewards Card. Call 1234-5678 to purchase your vacation package now—then, you’ll have a full year to complete your stay!</p>
+					<a href="booking.html" class="btn btn-primary">Book Now</a>
+				</div>				
+			</div>
+			<div class="card col-md-4 col-sm-12 col-xm-12" style="width: 18rem; margin: 20px 0 24px 0">
+				<img src="{{url_for('static', filename='hotelB.png')}}" alt="image" class="card-img-top zoom">
+				<div class="card-body">
+					<h4 class="card-title">Hotel C</h4>
+					<p class="card-text">Book by 5/25 and stay by 12/22/21 to save on luxury resort stays with unlimited dining and spirits, entertainment and more. Plus, book on goeyego.com to earn enough points for a week of free nights at select more locations!</p>
+					<a href="booking.html" class="btn btn-primary">Book Now</a>
+				</div>				
+			</div>		
+		</div>
+	</div>
+	<!--footer-->
+	<footer class="page-footer font-small blue pt-4">
+
+		<!--Footer Links-->
+		<div class="container-fluid text-center text-md-left">
+			<!--Grid row-->
+			<div class="row">
+				<!-- Grid column-->
+				<div class="col-md-6 mt-md-0 mt-3" >
+					<!--content-->
+					<h5 class="text-uppercase">More</h5>
+					<p>Here you can use fast links to read more, enjoy!</p>			
+				</div>
+				<!--Grid Column-->
+				<hr class="clearfix w-100d-md-none pb-3">
+
+				<!--Grid Column-->
+				<div class="col-md-3 mb-md-0 mb-3">
+
+					<!--Links-->
+					<h5 class="text-uppercase">Recommed Countries</h5>
+
+					<ul class="list-unstyled">
+						<li><a href="https://www.discoverhongkong.com/us/index.html">Hong Kong</a></li>
+						<li><a href="https://www.japan.travel/en/">Japan</a></li>
+						<li><a href="https://www.hawaiitourismauthority.org/">Hawaii</a></li>
+						<li><a href="https://english.visitkorea.or.kr/enu/index.kto">Korea</a></li>					
+					</ul>				
+				</div>
+				<!--Grid Column-->
+				<div class="col-md-3 mb-md-0 mb-3">
+
+					<!--Links-->
+					<h5 class="text-uppercase">Useful links</h5>
+
+					<ul class="list-unstyled">
+						<li><a href="https://www.who.int/home">World Health Organization</a></li>
+						<li><a href="https://www.un.org/en">United Nations</a></li>
+						<li><a href="https://www.scmp.com/topics/travel-news-and-advice">South China Morning Post - Travel news</a></li>
+						<li><a href="https://www.wtravelmagazine.com/">World Travel</a></li>					
+					</ul>				
+				</div>
+				<!--end Grid Column-->
+			</div>
+			<!--End Grid row-->
+		</div>
+	</footer>
+	<!--End Footer Links-->
+	<!--Copyright-->
+	<div class="footer-copyright text-center py-3">@ 2021 Copyright: Chan Yik Kit <a href="#"><b>GoEyeGo</a>.com</b></div>	
+</body>
+</html>

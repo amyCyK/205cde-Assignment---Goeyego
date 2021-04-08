@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GoEyeGo - register</title>
+	<link href="{{url_for('static', filename='favicon.jpg')}}" rel="shortcut icon" type="image/jpg" sizes="720x720">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style2.css')}}">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="welcome">
+		<marquee direction=right><h3> Notice <img src="{{url_for('static', filename='Notice.png')}}" alt="Notice logo" width="20px" height="20px"><i> Welcome to One-Stop Travel Information Site</i><STRONG><a href="index.html"> GoEyeGo </a></STRONG><b><em>Hope you enjoy yourself!</em></b></h3></marquee>
+	</div>	
+	<nav>
+		<br>
+		<label class="logo"><a href="index.html"><img src="{{url_for('static', filename='favicon.jpg')}}" alt="GoEyeGo image" width="160px" height="160px"></a></label>
+		<!--Go to Home Page-->
+		<ul>
+			<!--Go to Home Page-->
+			<li><a href="index.html">Home</a></li>				
+			<!--Currrent news realted travel such as, COVID-19-->
+			<li><a href="news.html">News</a></li>
+			<!--Dropdown list for food, shopping, famous travelspot, etc-->		
+			<!--blockquote>Information</blockquote-->
+			<!--Currency Tool-->
+			<li><a href="currency.html">Currency</a></li>
+			<!--Information Dropdown List: Hotel and Flight-->
+			<li>
+				<div class="dropdown">
+  					<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				Information
+  					</button>
+  					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    					<a class="dropdown-item" href="hotel.html">Hotel</a>
+    					<a class="dropdown-item" href="flight.html">Flight</a>
+    					<a class="dropdown-item" href="#">Books</a>
+  					</div>
+				</div>		
+			</li>	
+			<!--Log-in to share your travel-->		
+			<li><a href="">Blog</a></li>
+			<!--Hotel Links-->
+			<li><a href="contactus.html">Contact Us</a></li>
+			<br><br>
+			<h3 align="right"><blockquote><a class="active" href="login.html">Log In</a></blockquote></h3>
+		</ul>
+	</nav>
+	</div>
+	<div class="body">
+		<br>
+		<h2 id="introduction"><u>New Account/Log In</u><br>Log in to read more and activate more functions!<br><br>Let's start our trip!</h2>
+		<div class="account">
+			<div class="login" class="dropdown-menu">
+  				<form class="px-4 py-3" action="/" method="post">
+  				<div class="form-group">
+  					<!--Registration form-->
+      				<label for="DropdownFormName">Name</label>
+      				<input type="text" class="form-control" id="DropdownFormName" name="name" placeholder="name">
+    			</div>
+    				<div class="form-group">
+      					<label for="DropdownFormEmail">Email Address</label>
+      					<input type="email" class="form-control" id="DropdownFormEmail" name="email" placeholder="email@example.com">
+    				</div>
+    			<div class="form-group">
+      				<label for="DropdownFormPhoneNumber">Phone Number</label>
+      				<input type="phonenumber" class="form-control" id="DropdownFormPhoneNumber" name="phonenumber" placeholder="phonenumber">
+    			</div>
+    			<div class="form-group">
+      				<label for="DropdownFormPassword">Password</label>
+      				<input type="password" class="form-control" id="DropdownFormPassword" name="password" placeholder="password">
+    			</div>
+    			<br>
+    			<div class="form-group">
+    				<label for="DropdownFormGender">Gender</label>
+    				<select class="form-select form-select-lg mb-3" name="gender" aria-label="gender" >
+  						<option selected>Please select your gender</option>
+  						<option value="1">Male</option>
+  						<option value="2">Female</option>
+  						<option value="3">Other</option>
+					</select>				
+    			</div>
+    			<div class="form-group">
+      				<label for="DropdownFormRegion">Region</label>
+      				<select class="form-select form-select-lg mb-3" name="region" aria-label="region" >
+  						<option selected>Please select your region</option>
+  						<option value="1">Hong Kong</option>
+  						<option value="2">United Kingdom</option>
+  						<option value="3">America</option>
+  						<option value="3">China</option>
+  						<option value="3">Japan</option>
+  						<option value="3">Korea</option>
+  						<!--more counties-->
+					</select>
+    			</div>
+    			<button type="submit" class="btn btn-info" value="Create Account" herf='index.html' >Submit</button>
+    			<div class="form-check">
+      				<input type="checkbox" class="form-check-input" id="dropdownCheck">
+      				<label class="form-check-label" for="dropdownCheck">Remember me</label>
+    			</div>
+    			
+  				</form>
+  				<div class="dropdown-divider">
+  				</div>
+  				
+  				<a class="dropdown-item" href="#">New Account? Register Here</a>
+  				<br>
+  				<a class="dropdown-item" href="#">Forgot password?</a>
+  				<br>
+			</div>
+		</div>	
+	</div>
+	<!--footer-->
+	<footer class="page-footer font-small blue pt-4">
+
+		<!--Footer Links-->
+		<div class="container-fluid text-center text-md-left">
+			<!--Grid row-->
+			<div class="row">
+				<!-- Grid column-->
+				<div class="col-md-6 mt-md-0 mt-3" >
+					<!--content-->
+					<h5 class="text-uppercase">More</h5>
+					<p>Here you can use fast links to read more, enjoy!</p>			
+				</div>
+				<!--Grid Column-->
+				<hr class="clearfix w-100d-md-none pb-3">
+
+				<!--Grid Column-->
+				<div class="col-md-3 mb-md-0 mb-3">
+
+					<!--Links-->
+					<h5 class="text-uppercase">Recommed Countries</h5>
+
+					<ul class="list-unstyled">
+						<li><a href="https://www.discoverhongkong.com/us/index.html">Hong Kong</a></li>
+						<li><a href="https://www.japan.travel/en/">Japan</a></li>
+						<li><a href="https://www.hawaiitourismauthority.org/">Hawaii</a></li>
+						<li><a href="https://english.visitkorea.or.kr/enu/index.kto">Korea</a></li>					
+					</ul>				
+				</div>
+				<!--Grid Column-->
+				<div class="col-md-3 mb-md-0 mb-3">
+
+					<!--Links-->
+					<h5 class="text-uppercase">Useful links</h5>
+
+					<ul class="list-unstyled">
+						<li><a href="https://www.who.int/home">World Health Organization</a></li>
+						<li><a href="https://www.un.org/en">United Nations</a></li>
+						<li><a href="https://www.scmp.com/topics/travel-news-and-advice">South China Morning Post - Travel news</a></li>
+						<li><a href="https://www.wtravelmagazine.com/">World Travel</a></li>					
+					</ul>				
+				</div>
+				<!--end Grid Column-->
+			</div>
+			<!--End Grid row-->
+		</div>
+	</footer>
+	<!--End Footer Links-->
+	<!--Copyright-->
+	<div class="footer-copyright text-center py-3">@ 2021 Copyright: Chan Yik Kit <a href="#"><b>GoEyeGo</a>.com</b>
+	</div>			
+</body>
+</html>
